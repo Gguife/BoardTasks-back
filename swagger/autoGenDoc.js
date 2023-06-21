@@ -1,4 +1,5 @@
 const mongooseToSwagger = require('mongoose-to-swagger');
+const EsquemaTarefa = require('../src/models/tarefa.js');
 const EsquemaUsuario = require('../src/models/usuario.js');
 const swaggerAutogen = require('swagger-autogen')({
     openapi: '3.0.0',
@@ -27,15 +28,16 @@ let doc = {
             description: "Servidor localhost."
         },
         {
-            url: "https://boardtasks-back-gguife.vercel.app/",
+            url: "https://dnc-board-tasks-back.vercel.app/",
             description: "Servidor de produção."
         }
     ],
     consumes: ['application/json'],
     produces: ['application/json'],
-    components:{
-        schemas:{
-           Usuario: mongooseToSwagger(EsquemaUsuario) 
+    components: {
+        schemas: {
+            Usuario: mongooseToSwagger(EsquemaUsuario),
+            Tarefa: mongooseToSwagger(EsquemaTarefa)
         }
     }
 }
