@@ -21,7 +21,7 @@ function tratarErros (res, err){
 
   //Erro inesperado
   console.error(err);
-  return res.status(500).josn({
+  return res.status(500).json({
     status: "Erro",
     statusMensagem: "Houve um problema inesperado, tente novamente mais tarde.",
     resposta: String(err)
