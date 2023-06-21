@@ -1,5 +1,5 @@
 function routes(app) {
-    app.use('/user', require('./routes/users.js'));
+    app.use('/usuario', require('./routes/usuario.js'));
     return;
 }
 
