@@ -1,6 +1,4 @@
-# DNC-BoardTasks-Back
-Projeto em Express.js do BoardTasks Back-End feito para o curso do Rubens Flinco na escola DNC.
-
+# BoardTask
 ----------------------------------------------------------------------------------------------------------
 
 ## Começe por aqui:
